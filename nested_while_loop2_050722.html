@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1>Sử dụng vòng lặp while lồng nhau</h1>
+</head>
+<body>
+  <script>
+    let draw;
+      draw = "<table border = 1 width = 300>";
+        let i = 1;
+        while (i <= 10) {
+          draw = draw + "<tr>"
+            let j = 1;
+            while (j <= 10) {
+
+              draw = draw + "<td>" + (i*j) + "</td>"
+              j++;
+            }
+          
+          draw = draw + "</tr>"
+
+          i++;
+        }
+
+      draw = draw + "</table>";
+
+      document.write(draw);
+
+  </script>
+
+
+
+
+</body>
+
+
+
+</html>
+
